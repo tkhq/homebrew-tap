@@ -5,43 +5,43 @@
 class Tk < Formula
   desc "Turnkey CLI"
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tkhq/tkcli/releases/download/v0.1.0/tkcli_0.1.0_macOS_ARM64.tar.gz", using: CurlDownloadStrategy
-      sha256 "d6e8118ede63b16b59911cc2e1a15f9c14a92d378be31d0c17580e96dc445f14"
+      url "https://github.com/tkhq/tkcli/releases/download/v0.1.1/tk_0.1.1_macOS_ARM64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d30fcb0fdc4f721742d262f4798719308929e9547a5dc4fc79d8d4acd3c5bd1a"
 
       def install
-        bin.install "tkcli"
+        bin.install "tk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tkhq/tkcli/releases/download/v0.1.0/tkcli_0.1.0_macOS_64bit.tar.gz", using: CurlDownloadStrategy
-      sha256 "5d3e28843d946fc5eb68dc89dbc28e7717553efcb92dadead153ff6b7b99a0e1"
+      url "https://github.com/tkhq/tkcli/releases/download/v0.1.1/tk_0.1.1_macOS_64bit.tar.gz", using: CurlDownloadStrategy
+      sha256 "4db62f5cf8433982bb47566301aed63d6026cdeacb3609dc5ab9c30eee5a3276"
 
       def install
-        bin.install "tkcli"
+        bin.install "tk"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tkhq/tkcli/releases/download/v0.1.0/tkcli_0.1.0_Linux_ARM64.tar.gz", using: CurlDownloadStrategy
-      sha256 "cfd6290b7137eeb4c0c8f151af721ac31d42e64ea3cf80d12fb4d0bba9d47eab"
+      url "https://github.com/tkhq/tkcli/releases/download/v0.1.1/tk_0.1.1_Linux_ARM64.tar.gz", using: CurlDownloadStrategy
+      sha256 "ba1f038729ebafc528545e70e2241bc8d62c6222d8f591a2d41244cb67644c93"
 
       def install
-        bin.install "tkcli"
+        bin.install "tk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tkhq/tkcli/releases/download/v0.1.0/tkcli_0.1.0_Linux_64bit.tar.gz", using: CurlDownloadStrategy
-      sha256 "04cc91cd4b3d5971a9b1900a0929a4c0f621d8449e5d4ba7b9e10c0422387bf7"
+      url "https://github.com/tkhq/tkcli/releases/download/v0.1.1/tk_0.1.1_Linux_64bit.tar.gz", using: CurlDownloadStrategy
+      sha256 "451f6d3d0968b8dcb30672de524eeb6d2ad176fc0d0db05cfcb03ba29251a959"
 
       def install
-        bin.install "tkcli"
+        bin.install "tk"
       end
     end
   end
