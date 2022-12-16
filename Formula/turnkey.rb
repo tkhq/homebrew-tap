@@ -5,21 +5,21 @@
 class Turnkey < Formula
   desc "Turnkey CLI"
   homepage ""
-  version "0.3.0"
+  version "0.3.1"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tkhq/tkcli/releases/download/v0.3.0/turnkey_0.3.0_macOS_ARM64.tar.gz", using: CurlDownloadStrategy
-      sha256 "db3fb409d1b27132c78194e23ba6a8025362f725e10711d39583863e30c44bf9"
+      url "https://github.com/tkhq/tkcli/releases/download/v0.3.1/turnkey_0.3.1_macOS_ARM64.tar.gz", using: CurlDownloadStrategy
+      sha256 "c5f010bc06ea4d8ec531937690bbb1f9a97c5a6975ed368eb3a5f42361a25d0f"
 
       def install
         bin.install "turnkey"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tkhq/tkcli/releases/download/v0.3.0/turnkey_0.3.0_macOS_64bit.tar.gz", using: CurlDownloadStrategy
-      sha256 "cb0b73cda30f96c20a55ba4c6a341503e86f3e5654d20b6eb500adedb44ddd9f"
+      url "https://github.com/tkhq/tkcli/releases/download/v0.3.1/turnkey_0.3.1_macOS_64bit.tar.gz", using: CurlDownloadStrategy
+      sha256 "5dd104469e6ad5244e583a88030c014525b61fbabe2fd8026788322112950740"
 
       def install
         bin.install "turnkey"
@@ -29,16 +29,16 @@ class Turnkey < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tkhq/tkcli/releases/download/v0.3.0/turnkey_0.3.0_Linux_ARM64.tar.gz", using: CurlDownloadStrategy
-      sha256 "44f1a466f58fb1dce12c130a2d4a495f7b6ead5f70fe8bf23681ef52b76bfeff"
+      url "https://github.com/tkhq/tkcli/releases/download/v0.3.1/turnkey_0.3.1_Linux_ARM64.tar.gz", using: CurlDownloadStrategy
+      sha256 "25234d598075246b9c30be884615d7f0c967d77546c40455168c97d8d4bdcecc"
 
       def install
         bin.install "turnkey"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tkhq/tkcli/releases/download/v0.3.0/turnkey_0.3.0_Linux_64bit.tar.gz", using: CurlDownloadStrategy
-      sha256 "d3cb35fad7e09a50e830d6036d643bd93761b0a8411cfcb5e29e34412d62b9ea"
+      url "https://github.com/tkhq/tkcli/releases/download/v0.3.1/turnkey_0.3.1_Linux_64bit.tar.gz", using: CurlDownloadStrategy
+      sha256 "ae4bf8883d0a1e4cd99cbd8c418077e99f021af1fa82f5b465617a4f0ecde8ea"
 
       def install
         bin.install "turnkey"
