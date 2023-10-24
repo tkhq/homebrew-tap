@@ -5,7 +5,7 @@ class Turnkey < Formula
   license "Apache License 2.0"
 
   if Hardware::CPU.arm?
-    url "https://github.com/tkhq/tkcli/raw/v1.0.2/dist/turnkey.darwin-aarch64", using: CurlDownloadStrategy
+    url "https://github.com/tkhq/tkcli/raw/v1.0.3/dist/turnkey.darwin-aarch64", using: CurlDownloadStrategy
     sha256 "f7689f57693b524f223b34175c0278267f74b6831464386038d0ee17ee546eff"
 
     def install
