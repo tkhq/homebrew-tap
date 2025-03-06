@@ -6,7 +6,7 @@ class Turnkey < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/tkhq/tkcli/releases/download/v1.1.3/turnkey.darwin-aarch64", using: CurlDownloadStrategy
-    sha256 "4e6881ec55c1172aa6fcc870710eb4b36bcfc906cd3df334b4041c7ce558db32"
+    sha256 "01ab04b339665e62223015b7fcf8a8189956dc967967eaa7007856b69b1bf609"
 
     def install
       bin.install "turnkey.darwin-aarch64" => "turnkey"
